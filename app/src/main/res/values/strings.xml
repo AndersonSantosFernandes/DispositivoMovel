@@ -1,3 +1,40 @@
 <resources>
+    <string name="texto">
+        Este aplicativo foi desenvolvico com Android Studio através de princípios ensinados
+        na aula de Computação Para Dispositivos Móveis lecionada pelo professor Eugenio no
+        quarto semestre da faculdade de Análise e Desenvolvimento de Sistemas.
+
+    </string>
+
     <string name="app_name">Trabalho CPM</string>
+    <string name="sLuz">Sensor de luz</string>
+    <string name="bt1">Botõ 1</string>
+
+    <string name="menu1">Sensor de luz</string>
+    <string name="menu2">menu2</string>
+    <string name="menu3">menu3</string>
+    <string name="menu4">menu 4</string>
+    <string name="Fbhaskara">Bhaskara</string>
+    <string name="jokenpo">Jokenpô</string>
+    
+    <string name="msgJogador">Vem jogar comigo</string>
+    <string name="pedra">Pedra</string>
+    <string name="papel">Papel</string>
+    <string name="tesoura">Tesoura</string>
+    <string name="jogador">Jogador</string>
+    <string name="maquina">Máquina</string>
+    <string name="jogar">Jogar</string>
+    <string name="apostando">Vamos ver quem ganha!</string>
+    <string name="zero">0</string>
+
+    <string name="texto1">Valor</string>
+    <string name="vlrA">Valor de A</string>
+    <string name="vlrB">Valor de B</string>
+    <string name="vlrC">Valor de C</string>
+    <string name="digite">Digite...</string>
+    <string name="bhaskara">Formula de Bhaskara</string>
+    <string name="calculo">Calcular</string>
+    <string name="sensor_de_luminosidade">Sensor de luminosidade</string>
+
+
 </resources>

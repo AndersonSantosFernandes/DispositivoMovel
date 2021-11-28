@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/menu1"
+        android:id="@+id/menu01"
+
+        />
+    <!--app:showAsAction="ifRoom" se o menu não couber na barra, ficarão os tres pontinhos. Se couber o menu ficará visível na propria barra-->
+    <!--app:showAsAction="always" o menu fica sempre ma barra-->
+    <!--app:showAsAction="never" o menu nunca aparece na barra-->
+
+    <item
+        android:title="@string/menu1"
+        android:id="@+id/menu02"
+        />
+    <item
+        android:title="@string/menu1"
+        android:id="@+id/menu03"
+        />
+    <item
+        android:title="@string/menu1"
+        android:id="@+id/menu04"
+        />
+    <item
+        android:id="@+id/menu05"
+        android:title="@string/bhaskara" />
+    <item
+        android:title="@string/jokenpo"
+        android:id="@+id/menu06"
+        />
+</menu>

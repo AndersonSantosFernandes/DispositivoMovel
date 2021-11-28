@@ -4,5 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    />
+    android:background="@drawable/gradiente"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear01"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            style="@style/imgTelaInicial"
+            android:src="@drawable/sensor_luz"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            style="@style/imgTelaInicial" android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear02"
+        android:layout_margin="20dp"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear01"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            style="@style/imgTelaInicial" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            style="@style/imgTelaInicial" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear03"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear02"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            style="@style/imgTelaInicial"
+            android:src="@drawable/bharkara"
+            />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            style="@style/imgTelaInicial"
+            android:src="@drawable/pepates" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

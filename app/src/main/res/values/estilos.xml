@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="menuBar">
+        <item name="background">@drawable/gradientes</item>
+    </style>
+
+    <style name="image">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+
+    <style name="radios">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="fundoTela">
+        <item name="android:background">@drawable/gradiente</item>
+    </style>
+
+    <style name="pontuacao">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:background">@drawable/pontuacao</item>
+    </style>
+
+    <style name="imgTelaInicial">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">40dp</item>
+    </style>
+
+    <style name="marginUp">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="titulos">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30dp</item>
+    </style>
+
+
+
+</resources>
