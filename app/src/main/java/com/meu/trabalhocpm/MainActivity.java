@@ -43,6 +43,18 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
 
+            case R.id.menu03:
+               Intent intent3 = new Intent(MainActivity.this, BancoDados.class);
+                startActivity(intent3);
+
+                break;
+
+            case R.id.menu04:
+              //  Intent intent4 = new Intent(MainActivity.this, Localizador.class);
+               // startActivity(intent4);
+
+                break;
+
             case R.id.menu05:
                 Intent intent5 = new Intent(MainActivity.this, Bhaskara.class);
                 startActivity(intent5);

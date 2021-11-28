@@ -12,7 +12,7 @@
 
     <string name="menu1">Sensor de luz</string>
     <string name="menu2">Compartilhamento</string>
-    <string name="menu3">menu3</string>
+    <string name="menu3">Banco de dados</string>
     <string name="menu4">menu 4</string>
     <string name="Fbhaskara">Bhaskara</string>
     <string name="jokenpo">Jokenpô</string>
@@ -38,6 +38,7 @@
 
     <string name="titulo_compartilha">Escreva um texto e compartilhe</string>
     <string name="btCompartilhar">Compartilhar</string>
+    <string name="title_activity_localizador">Localizador</string>
 
 
 </resources>
