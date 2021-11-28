@@ -37,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
 
+            case R.id.menu02:
+                Intent intent2 = new Intent(MainActivity.this, Compartilhar.class);
+                startActivity(intent2);
+
+                break;
 
             case R.id.menu05:
                 Intent intent5 = new Intent(MainActivity.this, Bhaskara.class);

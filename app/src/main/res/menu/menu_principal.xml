@@ -11,15 +11,15 @@
     <!--app:showAsAction="never" o menu nunca aparece na barra-->
 
     <item
-        android:title="@string/menu1"
+        android:title="@string/menu2"
         android:id="@+id/menu02"
         />
     <item
-        android:title="@string/menu1"
+        android:title="@string/menu3"
         android:id="@+id/menu03"
         />
     <item
-        android:title="@string/menu1"
+        android:title="@string/menu4"
         android:id="@+id/menu04"
         />
     <item

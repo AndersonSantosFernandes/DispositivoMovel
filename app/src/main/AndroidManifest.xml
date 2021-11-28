@@ -10,15 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrabalhoCPM">
         <activity
+            android:name=".Compartilhar"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
+        <activity
             android:name=".Bhaskara"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".Jokenpo"
             android:exported="true"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".SensorLuz"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".MainActivity"
             android:exported="true">

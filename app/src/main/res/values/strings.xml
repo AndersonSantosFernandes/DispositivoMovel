@@ -6,17 +6,17 @@
 
     </string>
 
-    <string name="app_name">Trabalho CPM</string>
+    <string name="app_name">Trabalho CpDM</string>
     <string name="sLuz">Sensor de luz</string>
     <string name="bt1">Botõ 1</string>
 
     <string name="menu1">Sensor de luz</string>
-    <string name="menu2">menu2</string>
+    <string name="menu2">Compartilhamento</string>
     <string name="menu3">menu3</string>
     <string name="menu4">menu 4</string>
     <string name="Fbhaskara">Bhaskara</string>
     <string name="jokenpo">Jokenpô</string>
-    
+
     <string name="msgJogador">Vem jogar comigo</string>
     <string name="pedra">Pedra</string>
     <string name="papel">Papel</string>
@@ -35,6 +35,9 @@
     <string name="bhaskara">Formula de Bhaskara</string>
     <string name="calculo">Calcular</string>
     <string name="sensor_de_luminosidade">Sensor de luminosidade</string>
+
+    <string name="titulo_compartilha">Escreva um texto e compartilhe</string>
+    <string name="btCompartilhar">Compartilhar</string>
 
 
 </resources>

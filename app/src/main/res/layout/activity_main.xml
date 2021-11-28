@@ -40,7 +40,10 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            style="@style/imgTelaInicial" android:layout_marginTop="4dp" />
+            style="@style/imgTelaInicial" android:layout_marginTop="4dp"
+            android:src="@drawable/compartilhar"
+            />
+
     </LinearLayout>
 
     <LinearLayout
