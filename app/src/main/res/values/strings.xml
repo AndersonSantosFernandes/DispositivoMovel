@@ -1,9 +1,33 @@
 <resources>
-    <string name="texto">
+    <string name="textoInformativo">
         Este aplicativo foi desenvolvico com Android Studio através de princípios ensinados
         na aula de Computação Para Dispositivos Móveis lecionada pelo professor Eugenio no
         quarto semestre da faculdade de Análise e Desenvolvimento de Sistemas.
+        No app foram usados alguns conceitos exibidos durante as aulas, como banco de dados,
+        alteraçao de imagens atraves da programação, acesso a mapas, sensores.
+        No primeiro item do menú fooi utilizado o sensor de luz, onde algumas imagens são
+        mostradas de acordo com a intensidade da luminosidade.
+        No segundo item podemos escrever um texto e compartilhar.
+        No terceiro item está um cadastro simples no banco de dados, onde só conseguimos gravar
+        os dados e comferir no app inspection.
+        No quarto fica um simples acesso ao mapa.
+        No quinto é o cálculo da formula de Bhaskara que depois dos resultados mostrados, basta
+        sacudir o aparelho para resetar os campos de entrada de dados.
+        E por ultimo um joguinho simples bem conhecido que é o jokempo onde foi utilizado a classe
+        random para a máquina escolher pedra, papel ou tesoura. Quem fizer dez pontos primeiro ganha,
+        e após, aparece o resultado e um botão de reset para reiniciar.
+        Anderson Santos Fernandes 7328085
+        Gabriela O Farrill Cesar Bota 7681636
+        Gustavo Dias Stanev 7395157
+        Stenio Santana Pompeu  2311534
+        Tatiane Cristina Froes de Araujo 7412800
+        Thiago Silva correia 6245206 Vítor Dornelas Carlos RA: 6796045
 
+
+    </string>
+    <string name="texto">
+        Para utilizar o app, clicar no menu na barra superior.
+        
     </string>
 
     <string name="app_name">Trabalho CpDM</string>
@@ -13,9 +37,10 @@
     <string name="menu1">Sensor de luz</string>
     <string name="menu2">Compartilhamento</string>
     <string name="menu3">Banco de dados</string>
-    <string name="menu4">menu 4</string>
+    <string name="menu4">Mapa</string>
     <string name="Fbhaskara">Bhaskara</string>
     <string name="jokenpo">Jokenpô</string>
+    <string name="about">Informações</string>
 
     <string name="msgJogador">Vem jogar comigo</string>
     <string name="pedra">Pedra</string>
@@ -39,6 +64,16 @@
     <string name="titulo_compartilha">Escreva um texto e compartilhe</string>
     <string name="btCompartilhar">Compartilhar</string>
     <string name="title_activity_localizador">Localizador</string>
+
+    <string name="bd">CRUD</string>
+    <string name="matricula">Matrícula</string>
+    <string name="nome">Nome</string>
+    <string name="idade">Idade</string>
+    <string name="cpf">CPF</string>
+    <string name="salvar">Salvar</string>
+    <string name="title_activity_mapa">Mapa</string>
+    <string name="todo">TODO</string>
+    <string name="string_todo" />
 
 
 </resources>

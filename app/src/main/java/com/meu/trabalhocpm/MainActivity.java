@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.menu04:
-              //  Intent intent4 = new Intent(MainActivity.this, Localizador.class);
-               // startActivity(intent4);
+               Intent intent4 = new Intent(MainActivity.this, Mapa.class);
+               startActivity(intent4);
 
                 break;
 
@@ -65,6 +65,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menu06:
                 Intent intent6 = new Intent(MainActivity.this, Jokenpo.class);
                 startActivity(intent6);
+
+                break;
+
+            case R.id.menu07:
+                Intent intent7 = new Intent(MainActivity.this, Informacoes.class);
+                startActivity(intent7);
 
                 break;
 

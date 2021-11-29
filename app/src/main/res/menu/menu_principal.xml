@@ -29,4 +29,8 @@
         android:title="@string/jokenpo"
         android:id="@+id/menu06"
         />
+    <item
+        android:title="@string/about"
+        android:id="@+id/menu07"
+        />
 </menu>
