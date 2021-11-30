@@ -49,17 +49,14 @@ public class BancoDados extends AppCompatActivity {
         PessoasDao dao = db.pessoasDao();
         PessoasEntity pesoas = new PessoasEntity(matric,name,idd,cp);
 
-//        PessoasEntity pesoas = new PessoasEntity(1379,"Delzilane",44,"20515694878");
+//        PessoasEntity pesoas = new PessoasEntity(1379,"Delzilane",44,"22222222222");
 
 
                 List<PessoasEntity> list = new ArrayList<>();
         list.add(pesoas);
         dao.inserAll(list);
 
-             matricula.setText("");
-             nome.setText("");
-             idade.setText("");
-             cpf.setText("");
+                extracted();
 
                 Snackbar.make(view,"Cadástro efetuado com sucesso !",Snackbar.LENGTH_SHORT).show();
 
@@ -76,14 +73,13 @@ public class BancoDados extends AppCompatActivity {
                 }
             });
 
+    }
 
-
-
-
-
-
-
-
-
+    private void extracted() {
+        matricula.setText("");
+        matricula.requestFocus();
+        nome.setText("");
+        idade.setText("");
+        cpf.setText("");
     }
 }
