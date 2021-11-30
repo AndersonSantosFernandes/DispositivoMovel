@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrabalhoCPM">
         <activity
+            android:name=".Consulta"
+            android:exported="true" />
+        <activity
             android:name=".Informacoes"
             android:exported="true" />
         <!--

@@ -2,6 +2,7 @@ package com.meu.trabalhocpm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +16,7 @@ import java.util.List;
 public class BancoDados extends AppCompatActivity {
 
     private EditText matricula, nome, idade, cpf;
-    private Button salvar;
+    private Button salvar, consult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,11 +60,21 @@ public class BancoDados extends AppCompatActivity {
              nome.setText("");
              idade.setText("");
              cpf.setText("");
+
+                Snackbar.make(view,"Cadástro efetuado com sucesso !",Snackbar.LENGTH_SHORT).show();
+
             }
             }
         });
 
-
+            Button consul = findViewById(R.id.buttonConsultas);
+            consul.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                 Intent intent = new Intent(BancoDados.this,Consulta.class);
+                 startActivity(intent);
+                }
+            });
 
 
 

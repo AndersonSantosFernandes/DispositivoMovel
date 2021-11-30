@@ -71,6 +71,7 @@
     <string name="idade">Idade</string>
     <string name="cpf">CPF</string>
     <string name="salvar">Salvar</string>
+    <string name="consultar">Consultas</string>
     <string name="title_activity_mapa">Mapa</string>
     <string name="todo">TODO</string>
     <string name="string_todo" />
