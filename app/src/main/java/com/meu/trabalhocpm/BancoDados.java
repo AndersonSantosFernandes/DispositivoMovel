@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 
 import com.google.android.material.snackbar.Snackbar;
 
@@ -16,7 +18,9 @@ import java.util.List;
 public class BancoDados extends AppCompatActivity {
 
     private EditText matricula, nome, idade, cpf;
-    private Button salvar, consult;
+    private Button salvar;
+    private Button buscar;
+    private ListView informacoes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,18 @@ public class BancoDados extends AppCompatActivity {
         nome = findViewById(R.id.nome);
         idade = findViewById(R.id.idade);
         cpf = findViewById(R.id.cpf);
+
+        AppDatabase db = AppDatabase.getInstance(getApplicationContext());
+        PessoasDao dao = db.pessoasDao();
+
+        List<PessoasEntity> pessoas = dao.listarTodasPessoas();
+        //List<String> alunos = alunoListView(pessoas);
+
+      //  ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
+          //      this,
+           //     android.R.layout.simple_list_item_1,
+           //     alunos );
+      //  informacoes.setAdapter(arrayAdapter);
 
         Button btSave = findViewById(R.id.buttonBd);
         btSave.setOnClickListener(new View.OnClickListener() {
@@ -45,11 +61,10 @@ public class BancoDados extends AppCompatActivity {
                 int idd = Integer.parseInt(String.valueOf(idade.getText()));
                String cp = vlrCpf;
 
-        AppDatabase db = AppDatabase.getInstance(getApplicationContext());
-        PessoasDao dao = db.pessoasDao();
+
         PessoasEntity pesoas = new PessoasEntity(matric,name,idd,cp);
 
-//        PessoasEntity pesoas = new PessoasEntity(1379,"Delzilane",44,"22222222222");
+
 
 
                 List<PessoasEntity> list = new ArrayList<>();
@@ -60,18 +75,23 @@ public class BancoDados extends AppCompatActivity {
 
                 Snackbar.make(view,"Cadástro efetuado com sucesso !",Snackbar.LENGTH_SHORT).show();
 
-            }
+/*
+                List<PessoasEntity> pessoas = dao.listarTodasPessoas();
+                List<String> alunos = alunoListView(pessoas);
+                arrayAdapter.addAll(alunos);
+                arrayAdapter.notifyDataSetChanged();
+  */          }
             }
         });
 
-            Button consul = findViewById(R.id.buttonConsultas);
-            consul.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                 Intent intent = new Intent(BancoDados.this,Consulta.class);
-                 startActivity(intent);
-                }
-            });
+        Button goconsulta = findViewById(R.id.buttonIrconsulta);
+        goconsulta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(BancoDados.this,Listagem.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -82,4 +102,5 @@ public class BancoDados extends AppCompatActivity {
         idade.setText("");
         cpf.setText("");
     }
+
 }

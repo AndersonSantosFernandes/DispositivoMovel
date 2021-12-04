@@ -27,3 +27,4 @@ public interface PessoasDao {
     @Update
     void updatePessoas(PessoasEntity ... pessoas);
 }
+

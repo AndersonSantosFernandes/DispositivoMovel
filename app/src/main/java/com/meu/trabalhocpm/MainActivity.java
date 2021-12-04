@@ -69,11 +69,16 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.menu07:
-                Intent intent7 = new Intent(MainActivity.this, Informacoes.class);
+                Intent intent7 = new Intent(MainActivity.this, Temperatura.class);
                 startActivity(intent7);
 
                 break;
 
+            case R.id.menu08:
+                Intent intent8 = new Intent(MainActivity.this, Informacoes.class);
+                startActivity(intent8);
+
+                break;
         }
 
         return super.onOptionsItemSelected(item);

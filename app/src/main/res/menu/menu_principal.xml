@@ -29,7 +29,11 @@
         android:id="@+id/menu06"
         />
     <item
-        android:title="@string/about"
+        android:title="@string/temperatura"
         android:id="@+id/menu07"
+        />
+    <item
+        android:title="@string/about"
+        android:id="@+id/menu08"
         />
 </menu>

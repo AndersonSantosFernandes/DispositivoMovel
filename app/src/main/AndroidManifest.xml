@@ -18,11 +18,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrabalhoCPM">
         <activity
-            android:name=".Consulta"
-            android:exported="true" />
+            android:name=".Listagem"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Temperatura"
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Informacoes"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -38,7 +44,8 @@
         <activity
             android:name=".Mapa"
             android:exported="true"
-            android:label="@string/title_activity_mapa" />
+            android:label="@string/title_activity_mapa"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".BancoDados"
             android:exported="true"

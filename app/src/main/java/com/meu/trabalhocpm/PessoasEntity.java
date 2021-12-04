@@ -68,14 +68,13 @@ public class PessoasEntity implements Pessoas{
     public void setCpf(String cpf) {
         Cpf = cpf;
     }
-    //metodo toString para dar um print de maneira visual é recomendado sua implementação
+
     @Override
     public String toString() {
-        return "PessoasEntity{" +
-                "matricula=" + matricula +
-                ", nome='" + nome + '\'' +
-                ", idade=" + idade +
-                ", Cpf='" + Cpf + '\'' +
-                '}';
+        return
+                "Matrícula= " + matricula + '\n' +
+                "Nome= " + nome + '\n' +
+                "Idade= " + idade + '\n' +
+                "CPF= " + Cpf + '\n';
     }
 }

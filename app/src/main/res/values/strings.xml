@@ -1,27 +1,31 @@
 <resources>
     <string name="textoInformativo">
-        Este aplicativo foi desenvolvico com Android Studio através de princípios ensinados
+        Este aplicativo foi desenvolvico com Android Studio através de conceitos apresentados
         na aula de Computação Para Dispositivos Móveis lecionada pelo professor Eugenio no
         quarto semestre da faculdade de Análise e Desenvolvimento de Sistemas.
         No app foram usados alguns conceitos exibidos durante as aulas, como banco de dados,
         alteraçao de imagens atraves da programação, acesso a mapas, sensores.
-        No primeiro item do menú fooi utilizado o sensor de luz, onde algumas imagens são
+        No primeiro item do menú foi utilizado o sensor de luz, onde algumas imagens são
         mostradas de acordo com a intensidade da luminosidade.
         No segundo item podemos escrever um texto e compartilhar.
-        No terceiro item está um cadastro simples no banco de dados, onde só conseguimos gravar
-        os dados e comferir no app inspection.
+        No terceiro item está um cadastro simples no banco de dados, onde conseguimos gravar
+        os dados em um banco de dados e consultar os dados na tela consultas.
         No quarto fica um simples acesso ao mapa.
         No quinto é o cálculo da formula de Bhaskara que depois dos resultados mostrados, basta
         sacudir o aparelho para resetar os campos de entrada de dados.
         E por ultimo um joguinho simples bem conhecido que é o jokempo onde foi utilizado a classe
         random para a máquina escolher pedra, papel ou tesoura. Quem fizer dez pontos primeiro ganha,
-        e após, aparece o resultado e um botão de reset para reiniciar.
-        Anderson Santos Fernandes 7328085
-        Gabriela O Farrill Cesar Bota 7681636
-        Gustavo Dias Stanev 7395157
-        Stenio Santana Pompeu  2311534
-        Tatiane Cristina Froes de Araujo 7412800
-        Thiago Silva correia 6245206 Vítor Dornelas Carlos RA: 6796045
+        e após, aparece o resultado e um botão de reset para reiniciar.Neste tmabeo foi utilizado
+        o conceito de mucança de imagens de fundo\n\n
+        INTEGRANTES\n\n
+        Anderson Santos Fernandes 7328085 \n
+        Gabriela O Farrill Cesar Bota 7681636\n
+        Gustavo Dias Stanev 7395157\n
+        Maicon Douglas 6640840\n
+        Stenio Santana Pompeu  2311534\n
+        Tatiane Cristina Froes de Araujo 7412800\n
+        Thiago Silva correia 6245206\n
+        Vítor Dornelas Carlos RA: 6796045\n
 
 
     </string>
@@ -40,6 +44,7 @@
     <string name="menu4">Mapa</string>
     <string name="Fbhaskara">Bhaskara</string>
     <string name="jokenpo">Jokenpô</string>
+    <string name="menu08">Con. Temperatura</string>
     <string name="about">Informações</string>
 
     <string name="msgJogador">Vem jogar comigo</string>
@@ -71,10 +76,16 @@
     <string name="idade">Idade</string>
     <string name="cpf">CPF</string>
     <string name="salvar">Salvar</string>
-    <string name="consultar">Consultas</string>
+    <string name="consulta">Lista de cadastrados</string>
+    <string name="consultar">Consultar</string>
     <string name="title_activity_mapa">Mapa</string>
     <string name="todo">TODO</string>
     <string name="string_todo" />
+
+    <string name="temperatura">Conversor de temperatura</string>
+    <string name="temp">Conv. Temp</string>
+    <string name="cepf">Celcius para Fahrenheit</string>
+    <string name="fpc"> Fahrenheit para Celcius </string>
 
 
 </resources>
