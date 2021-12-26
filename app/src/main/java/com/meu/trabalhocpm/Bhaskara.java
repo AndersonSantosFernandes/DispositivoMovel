@@ -5,6 +5,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +16,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class Bhaskara extends AppCompatActivity {
 
-    // bhaskara
+    private MediaPlayer somCalcular, somResetar;
     private EditText valorA, valorB, valorC;
     private TextView delta, x1linha, x2linha, reset;
     private Button calculo;
@@ -30,6 +31,8 @@ public class Bhaskara extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bhaskara);
+        somResetar = MediaPlayer.create(this,R.raw.go);
+        somCalcular = MediaPlayer.create(this,R.raw.win);
 
         valorA = findViewById(R.id.editA);
         valorB = findViewById(R.id.editB);
@@ -61,6 +64,7 @@ public class Bhaskara extends AppCompatActivity {
                     x1linha.setText("X'  "+linha1);
                     x2linha.setText("X'' "+linha2);
                    reset.setText("Sacudir o aparelho para resetar");
+                   somCalcular.start();
                 }
             }
         });
@@ -86,6 +90,7 @@ public class Bhaskara extends AppCompatActivity {
                     x1linha.setText("");
                     x2linha.setText("");
                     reset.setText("");
+                    somResetar.start();
                 }
             }
 
@@ -95,7 +100,5 @@ public class Bhaskara extends AppCompatActivity {
             }
         }, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
                 SensorManager.SENSOR_DELAY_FASTEST);
-
-
-    }
+     }
 }

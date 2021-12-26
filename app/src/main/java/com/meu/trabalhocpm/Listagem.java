@@ -33,7 +33,9 @@ public class Listagem extends AppCompatActivity {
         informacoes.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-               excluir(i);
+               
+                
+                excluir(i+1);
                 return true;
             }
         });
@@ -46,6 +48,7 @@ public class Listagem extends AppCompatActivity {
         return alunos;
     }
     public void excluir(Integer i){
-        Toast.makeText(this, i.toString(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Escolheu a linha "+i.toString(), Toast.LENGTH_SHORT).show();
+
     }
 }

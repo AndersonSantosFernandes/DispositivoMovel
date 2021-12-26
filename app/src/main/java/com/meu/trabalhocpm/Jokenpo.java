@@ -2,6 +2,7 @@ package com.meu.trabalhocpm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,13 +23,18 @@ public class Jokenpo extends AppCompatActivity {
     private RadioButton pedra, papel, tesoura;
     private ImageView jogador1, oponente1;
     private ScrollView fundo;
-
+    private MediaPlayer ganhar, perder, empatar, aplaudir, vaiar, win;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jokenpo);
         Objects.requireNonNull(getSupportActionBar()).hide();
-
+        ganhar = MediaPlayer.create(this,R.raw.games01);
+        perder = MediaPlayer.create(this,R.raw.games02);
+        empatar = MediaPlayer.create(this,R.raw.empate);
+        aplaudir = MediaPlayer.create(this,R.raw.applausos);
+        vaiar = MediaPlayer.create(this,R.raw.vaia);
+        win = MediaPlayer.create(this,R.raw.win);
         IniciarComponentes();
         test = findViewById(R.id.teste);
         saida = findViewById(R.id.resposta);
@@ -69,6 +75,7 @@ public class Jokenpo extends AppCompatActivity {
                         saida.setText(empate);
                         saida2.setText(fala);
                         fundo.setBackgroundResource(R.color.gray);
+                        empatar.start();
                     } else if (maquina == 1) {
                         oponente1.setBackgroundResource(R.drawable.papel);
                         saida.setText(perde);
@@ -76,6 +83,7 @@ public class Jokenpo extends AppCompatActivity {
                         fundo.setBackgroundResource(R.color.red);
                         ptmaq[0] = ptmaq[0] + 1;
                         computador.setText("" + ptmaq[0]);
+                        perder.start();
                     } else if (maquina == 2) {
                         oponente1.setBackgroundResource(R.drawable.tesoura);
                         saida.setText(ganha);
@@ -83,6 +91,7 @@ public class Jokenpo extends AppCompatActivity {
                         fundo.setBackgroundResource(R.color.green);
                         ptjog[0] = ptjog[0] + 1;
                         homem.setText("" + ptjog[0]);
+                        ganhar.start();
                     }
 
                 } else if (papel.isChecked()) {
@@ -94,6 +103,7 @@ public class Jokenpo extends AppCompatActivity {
                         saida.setText(empate);
                         saida2.setText(fala);
                         fundo.setBackgroundResource(R.color.gray);
+                        empatar.start();
                     } else if (maquina == 0) {
                         oponente1.setBackgroundResource(R.drawable.pedra);
                         saida.setText(ganha);
@@ -101,6 +111,7 @@ public class Jokenpo extends AppCompatActivity {
                         fundo.setBackgroundResource(R.color.green);
                         ptjog[0] = ptjog[0] + 1;
                         homem.setText("" + ptjog[0]);
+                        ganhar.start();
                     } else if (maquina == 2) {
                         oponente1.setBackgroundResource(R.drawable.tesoura);
                         saida.setText(perde);
@@ -108,6 +119,7 @@ public class Jokenpo extends AppCompatActivity {
                         fundo.setBackgroundResource(R.color.red);
                         ptmaq[0] = ptmaq[0] + 1;
                         computador.setText("" + ptmaq[0]);
+                        perder.start();
                     }
                     //0=pedra
                     //1=papel
@@ -121,6 +133,7 @@ public class Jokenpo extends AppCompatActivity {
                         saida.setText(empate);
                         saida2.setText(fala);
                         fundo.setBackgroundResource(R.color.gray);
+                        empatar.start();
                     } else if (maquina == 1) {
                         oponente1.setBackgroundResource(R.drawable.papel);
                         saida.setText(ganha);
@@ -128,6 +141,7 @@ public class Jokenpo extends AppCompatActivity {
                         fundo.setBackgroundResource(R.color.green);
                         ptjog[0] = ptjog[0] + 1;
                         homem.setText("" + ptjog[0]);
+                        ganhar.start();
                     } else if (maquina == 0) {
                         oponente1.setBackgroundResource(R.drawable.pedra);
                         saida.setText(perde);
@@ -135,6 +149,7 @@ public class Jokenpo extends AppCompatActivity {
                         fundo.setBackgroundResource(R.color.red);
                         ptmaq[0] = ptmaq[0] + 1;
                         computador.setText("" + ptmaq[0]);
+                        perder.start();
                     }
 
                 } else {
@@ -147,6 +162,7 @@ public class Jokenpo extends AppCompatActivity {
                     computador.setText("X");
                     homem.setText("X");
                     test.setText("Reset");
+                    aplaudir.start();
                     // test.setBackgroundResource(R.drawable.ic_launcher_background);
                 }else if (ptmaq[0] ==10 ){
                     menu.set(true);
@@ -154,6 +170,7 @@ public class Jokenpo extends AppCompatActivity {
                     computador.setText("X");
                     homem.setText("X");
                     test.setText("Reset");
+                    vaiar.start();
                     // test.setBackgroundResource(R.drawable.ic_launcher_background);
                 }
             }
@@ -172,6 +189,7 @@ public class Jokenpo extends AppCompatActivity {
                 saida.setText(reset1);
                 saida2.setText(reset2);
                 fundo.setBackgroundResource(R.color.gray);
+                win.start();
             }
         });
     }

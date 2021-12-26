@@ -29,9 +29,8 @@ public class PessoasEntity implements Pessoas{
         this.nome = pessoas.getNome();
         this.idade = pessoas.getIdade();
         this.Cpf = pessoas.getCpf();
-
-
     }
+
 
     @Override
     public int getMatricula() {

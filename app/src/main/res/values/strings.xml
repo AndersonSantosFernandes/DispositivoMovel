@@ -30,10 +30,10 @@
 
     </string>
     <string name="texto">
-        Para utilizar o app, clicar no menu na barra superior.
+        Computação para dispositivos móveis FMU 2021
         
     </string>
-
+    <string name="blackBoard">Acessar o black Board \nFMU</string>
     <string name="app_name">Trabalho CpDM</string>
     <string name="sLuz">Sensor de luz</string>
     <string name="bt1">Botõ 1</string>
@@ -46,6 +46,8 @@
     <string name="jokenpo">Jokenpô</string>
     <string name="menu08">Con. Temperatura</string>
     <string name="about">Informações</string>
+    <string name="desenho">Desenho</string>
+    <string name="sair">Sair</string>
 
     <string name="msgJogador">Vem jogar comigo</string>
     <string name="pedra">Pedra</string>
@@ -86,6 +88,18 @@
     <string name="temp">Conv. Temp</string>
     <string name="cepf">Celcius para Fahrenheit</string>
     <string name="fpc"> Fahrenheit para Celcius </string>
+
+    <string name="tituloT2">Pitagoras</string>
+
+    <string name="hipotenusa">Hipotenusa</string>
+    <string name="catetoMaior">Cateto Maior</string>
+    <string name="catetoMenor">Cateto Menor</string>
+    <string name="calcular">Calcular</string>
+    <string name="instrucao">Para realizar o cálculo insira dois valores
+        deixando vazio apenas o que quer descobrir. \n
+        O valor do cateto não deve ser maior que o da hipotenusa.\n
+        Clique longo em calcular = limpa valores.
+    </string>
 
 
 </resources>

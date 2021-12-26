@@ -3,6 +3,7 @@ package com.meu.trabalhocpm;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BancoDados extends AppCompatActivity {
-
+    private MediaPlayer gravadoSucesso;
     private EditText matricula, nome, idade, cpf;
     private Button salvar;
     private Button buscar;
@@ -26,7 +27,7 @@ public class BancoDados extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_banco_dados);
-
+        gravadoSucesso = MediaPlayer.create(this,R.raw.win);
         matricula = findViewById(R.id.matricula);
         nome = findViewById(R.id.nome);
         idade = findViewById(R.id.idade);
@@ -61,26 +62,17 @@ public class BancoDados extends AppCompatActivity {
                 int idd = Integer.parseInt(String.valueOf(idade.getText()));
                String cp = vlrCpf;
 
-
-        PessoasEntity pesoas = new PessoasEntity(matric,name,idd,cp);
-
-
-
+               PessoasEntity pesoas = new PessoasEntity(matric,name,idd,cp);
 
                 List<PessoasEntity> list = new ArrayList<>();
-        list.add(pesoas);
-        dao.inserAll(list);
+                list.add(pesoas);
+                dao.inserAll(list);
 
                 extracted();
 
                 Snackbar.make(view,"Cadástro efetuado com sucesso !",Snackbar.LENGTH_SHORT).show();
-
-/*
-                List<PessoasEntity> pessoas = dao.listarTodasPessoas();
-                List<String> alunos = alunoListView(pessoas);
-                arrayAdapter.addAll(alunos);
-                arrayAdapter.notifyDataSetChanged();
-  */          }
+                gravadoSucesso.start();
+              }
             }
         });
 

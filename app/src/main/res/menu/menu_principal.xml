@@ -33,7 +33,15 @@
         android:id="@+id/menu07"
         />
     <item
+        android:title="@string/tituloT2"
+        android:id="@+id/menu10"
+        />
+    <item
         android:title="@string/about"
         android:id="@+id/menu08"
+        />
+    <item
+        android:title="@string/sair"
+        android:id="@+id/menu09"
         />
 </menu>

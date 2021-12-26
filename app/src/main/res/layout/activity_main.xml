@@ -38,13 +38,36 @@
         android:id="@+id/imageView2"
         android:layout_width="132dp"
         android:layout_height="143dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.236"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/string_todo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/fmu"
-        android:contentDescription="@string/string_todo" />
+        app:srcCompat="@drawable/fmu" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="134dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="@string/blackBoard"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imagePlayPause"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/ic_play" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

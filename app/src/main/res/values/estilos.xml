@@ -61,7 +61,24 @@
         <item name="android:padding">10dp</item>
         <item name="android:layout_marginRight">10dp</item>
     </style>
+    <style name="textViews">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/gradientes</item>
+        <item name="android:textColor">@color/black</item>
 
+    </style>
+
+    <style name="textViews2">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">160dp</item>
+        <item name="android:background">@drawable/gradientes</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
 
 
 </resources>
