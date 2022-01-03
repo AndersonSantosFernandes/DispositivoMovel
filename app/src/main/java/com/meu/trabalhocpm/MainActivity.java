@@ -1,7 +1,9 @@
 package com.meu.trabalhocpm;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -10,8 +12,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-
-
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         }
     });
 
-
     play = findViewById(R.id.imagePlayPause);
     play.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -49,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     });
-
 
     }
 
@@ -111,14 +109,55 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent10);
                 break;
 
-
             case R.id.menu09:
                finish();
                 break;
-
-
         }
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+
+        AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+        dialog.setTitle("Selecione");
+        dialog.setMessage("Deseja sair da aplicação?");
+        dialog.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                tocar1.stop();
+                finish();
+            }
+        });
+        dialog.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        dialog.create();
+        dialog.show();
+
+    }
+
 }
+
+/*
+
+Eu escrevi um trecho de código que fornecerá ao usuário um prompt pedindo
+que pressione a tecla Voltar novamente se quiser sair. Atualmente, tenho
+meu código funcionando até certo ponto, mas sei que está mal escrito e presumo
+que haja uma maneira melhor de fazê-lo. Quaisquer sugestões seriam úteis!
+
+Código:
+
+public void onBackPressed(){
+    backpress = (backpress + 1);
+    Toast.makeText(getApplicationContext(), " Press Back again to Exit ", Toast.LENGTH_SHORT).show();
+
+    if (backpress>1) {
+        this.finish();
+    }
+}
+
+*/

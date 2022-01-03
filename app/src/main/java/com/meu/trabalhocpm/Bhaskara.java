@@ -91,6 +91,7 @@ public class Bhaskara extends AppCompatActivity {
                     x2linha.setText("");
                     reset.setText("");
                     somResetar.start();
+
                 }
             }
 
@@ -100,5 +101,13 @@ public class Bhaskara extends AppCompatActivity {
             }
         }, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
                 SensorManager.SENSOR_DELAY_FASTEST);
+
+
+     }
+
+     @Override
+    public void onBackPressed(){
+        somResetar.stop();
+        super.onBackPressed();
      }
 }

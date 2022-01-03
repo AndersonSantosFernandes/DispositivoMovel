@@ -6,6 +6,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ public class Temperatura extends AppCompatActivity {
     private Button calcular;
     private RadioButton cpf, fpc;
     private SensorManager mSensorManager;
+    private MediaPlayer convert, reset, cigarra;
     private float acceleration;
     private float currentAcceleration;
     private float lastAcceleration;
@@ -29,6 +31,9 @@ public class Temperatura extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_temperatura);
+        convert = MediaPlayer.create(this,R.raw.win);
+        reset = MediaPlayer.create(this,R.raw.empate);
+        cigarra = MediaPlayer.create(this,R.raw.cigarra);
         entraValor1 = findViewById(R.id.valorTemperatura);
         saida = findViewById(R.id.saida);
         calcular = findViewById(R.id.buttonTemp);
@@ -51,12 +56,15 @@ public class Temperatura extends AppCompatActivity {
                         farenheit = (input * 9/5) +32;
                         saida.setText(input+" graus celcius equivalem a\n "+farenheit+" farenheit");
                         msgOculta.setText("Sacudir para limpar dados");
+                        convert.start();
                     }else if (fpc.isChecked()){
                         celcius = (input - 32)* 5/9;
                         saida.setText(input+ " fahrenheit equivalem a "+celcius+" graus celcius");
                         msgOculta.setText("Sacudir para limpar dados");
+                        convert.start();
                     }else{
                         Snackbar.make(view,"Escolha um modo de conversão",Snackbar.LENGTH_SHORT).show();
+                        cigarra.start();
                     }
 
                 }
@@ -76,6 +84,7 @@ public class Temperatura extends AppCompatActivity {
                         entraValor1.setText("");
                         saida.setText("");
                         msgOculta.setText("");
+                        reset.start();
                     }
                 }
                 @Override
@@ -83,5 +92,12 @@ public class Temperatura extends AppCompatActivity {
                 }
             }, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
         SensorManager.SENSOR_DELAY_FASTEST);
+    }
+    @Override
+    public void onBackPressed(){
+        reset.stop();
+        convert.stop();
+        cigarra.stop();
+        super.onBackPressed();
     }
 }
