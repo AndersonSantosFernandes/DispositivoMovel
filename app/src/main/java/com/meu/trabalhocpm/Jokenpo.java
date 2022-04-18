@@ -1,7 +1,6 @@
 package com.meu.trabalhocpm;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -10,9 +9,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
-
 import com.google.android.material.snackbar.Snackbar;
-
 import java.util.Objects;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;

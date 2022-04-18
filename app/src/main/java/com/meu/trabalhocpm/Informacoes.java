@@ -1,7 +1,7 @@
 package com.meu.trabalhocpm;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -34,5 +34,11 @@ public class Informacoes extends AppCompatActivity {
     });
 
 
+    }
+    @Override
+    public void onBackPressed() {
+
+       informacoes.stop();
+       super.onBackPressed();
     }
 }
